@@ -92,13 +92,13 @@ Public Class View1
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim newValues As New DestilacionControl
-        newValues.Consumo_Electrico = Convert.ToDouble(txt_consumo.ToString())
-        newValues.Litros_Ordinario = Convert.ToDouble(txt_litros_ord.ToString())
-        newValues.Litros_Vinasa = Convert.ToDouble(txt_litros_vinasa.ToString())
-        newValues.Porcentaje_Ordinario = Convert.ToDouble(txt_por_ord.ToString())
-        newValues.Presion_Calderas = Convert.ToDouble(txt_calderas.ToString())
-        newValues.Presion_Operacion = Convert.ToDouble(txt_operacion.ToString())
-        newValues.Temperatura_Muestra = Convert.ToDouble(txt_temp_vinasa.ToString())
+        newValues.Consumo_Electrico = Convert.ToDouble(txt_consumo.Text)
+        newValues.Litros_Ordinario = Convert.ToDouble(txt_litros_ord.Text)
+        newValues.Litros_Vinasa = Convert.ToDouble(txt_litros_vinasa.Text))
+    newValues.Porcentaje_Ordinario = Convert.ToDouble(txt_por_ord.Text)
+    newValues.Presion_Calderas = Convert.ToDouble(txt_calderas.Text)
+    newValues.Presion_Operacion = Convert.ToDouble(txt_operacion.Text)
+    newValues.Temperatura_Muestra = Convert.ToDouble(txt_temp_vinasa.Text)
         Dim addValues As New Destilacion_Procedures()
         addValues.Insertar(newValues)
     End Sub

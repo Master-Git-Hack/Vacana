@@ -43,6 +43,7 @@ Public Class Destilacion_Procedures
             newCommand = New SqlCommand("geTable")
             newCommand.CommandType = CommandType.StoredProcedure
             newCommand.Connection = conexion
+            newCommand.Parameters.AddWithValue("@fecha",Date.Now.ToShortDateString())
             If newCommand.ExecuteNonQuery Then
 
                 datAdapter = New SqlDataAdapter(newCommand)

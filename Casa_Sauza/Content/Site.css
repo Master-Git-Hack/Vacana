@@ -1,0 +1,49 @@
+﻿/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+    /*background-image:url('../Src/Images/editada 2.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;*/
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+ .borde {
+    border-radius: 35px;
+}
+/* Set widths on the form inputs since otherwise they're 100% wide */
+.btn,.navbar,.card{
+    border-radius:35px;
+}
+.navbar-link {
+    font-size: medium;
+}
+.pos{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.form-control{
+    border-radius:35px;
+}
+.log{
+    min-width:500px;
+    max-width:900px;
+}
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .alert {
+        margin-top: 20px;
+    }
+    .body-content {
+        padding: 0;
+    }
+}
